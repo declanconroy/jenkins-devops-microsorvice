@@ -22,10 +22,10 @@ pipeline {
 			echo 'Im awesome. I run Always'
 		}
 		success {
-			echo ' on success'
+			echo 'run on success'
 		}
 		failure {
-			echo ' on fail'
+			echo 'run on fail'
 		}
 	}
 }
