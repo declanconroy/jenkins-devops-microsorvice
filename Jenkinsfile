@@ -11,6 +11,7 @@ pipeline {
 				echo "JOB_NAME - $env.JOB_NAME"
 				echo "NODE_NAME - $env.NODE_NAME"
 				echo "JOB_BASE_NAME - $env.JOB_BASE_NAME"
+				echo "BUILD_TAG - $env.BUILD_TAG"
 				echo "Build"
 			}
 		}
