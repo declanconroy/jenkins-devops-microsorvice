@@ -57,13 +57,13 @@ pipeline {
 		}
 		stage("Push Docker Image") {
 			steps {
-				docker push dconroy1971/currency-exchange-devops:$env.BUILD_TAG
-				// script{
-				// 	docker.withRegistry('', 'dockerhub') {
-				// 		dockerImage.push;
-				// 		// dockerImage.push('latest');
-				// 	}
-				// }
+				// docker push dconroy1971/currency-exchange-devops:$env.BUILD_TAG
+				script{
+					docker.withRegistry('', 'dockerhub') {
+						dockerImage.push();
+						dockerImage.push('latest');
+					}
+				}
 			}
 		}
 	} 
