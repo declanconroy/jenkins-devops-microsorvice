@@ -12,6 +12,7 @@ pipeline {
 				echo "NODE_NAME - $env.NODE_NAME"
 				echo "JOB_BASE_NAME - $env.JOB_BASE_NAME"
 				echo "BUILD_TAG - $env.BUILD_TAG"
+				echo "BUILD_URL - $env.BUILD_URL"
 				echo "Build"
 			}
 		}
