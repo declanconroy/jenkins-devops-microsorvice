@@ -5,11 +5,12 @@ pipeline {
 		stage('Build') {
 			steps {
 				// sh 'mvn --version'
-				echo "$path"
+				echo "Path - $path"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 				echo "BUILD_ID - $env.BUILD_ID"
 				echo "JOB_NAME - $env.JOB_NAME"
 				echo "BUILD.TAG - $env.BUILD.TAG"
+				echo "BUILD.URL - $env.BUILD.URL"
 				echo "Build"
 			}
 		}
@@ -29,10 +30,10 @@ pipeline {
 			echo 'Im awesome. I run Always'
 		}
 		success {
-			echo 'run on success'
+			echo 'Success'
 		}
 		failure {
-			echo 'run on fail'
+			echo 'Something went wrong'
 		}
 	}
 }
