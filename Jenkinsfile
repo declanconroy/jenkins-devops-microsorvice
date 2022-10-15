@@ -9,8 +9,8 @@ pipeline {
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 				echo "BUILD_ID - $env.BUILD_ID"
 				echo "JOB_NAME - $env.JOB_NAME"
-				// echo "BUILD.TAG - $env.BUILD.TAG"
-				echo "BUILD.URL - $env.BUILD.URL"
+				echo "NODE_NAME - $env.NODE_NAME"
+				echo "JOB_BASE_NAME - $env.JOB_BASE_NAME"
 				echo "Build"
 			}
 		}
